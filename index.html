@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FCC: Tribute Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+            <div class="container">
+                <div class="image-container">
+                </div>
+                <div class="form-container">
+                    <h1 id="title">FCC Survey Project Form</h1>
+                    <p id="description">Let me know how I can improve my freeCodeCamp survey form</p>
+                    <form id="survey-form">
+                        <div class="columns">
+                            <div class="left-column">
+                                <label id="name-label" for="name">* Name</label>
+                                    <input id="name" class="name-label" type="text" name="name" required placeholder="Name">
+                                <label id="email-label" for="email">* Email:</label>
+                                    <input id="email" class="email-label" type="email" name="email" required placeholder="Email">
+                                <label>Which part of my form did you find most appealing?</label>
+                                    <ul>
+                                        <li>
+                                            <input type="checkbox" name="design" value="design"><label>Design</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="code" value="code"><label>Code</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="functionality" value="functionality"><label>Functionality</label>
+                                        </li>
+                                    </ul>
+                            </div>
+                            <div class="right-column">
+                                <label id="number-label">Your Age:</label>
+                                    <input id="number" class="number-label" type="number" name="number" placeholder="Age" min="1" max="125">
+                                <label>Select your current camper status?</label>
+                                    <select id="dropdown" name="camperStatus" class="dropdown">
+                                        <option disabled selected value>Select an option</option>
+                                        <option value="beginner">New Student</option>
+                                        <option value="intermediate">Skilled Student</option>
+                                        <option value="advanced">Advanced Student</option>
+                                        <option value="graduate">FCC Graduate</option>
+                                    </select>
+                                <label>Which area of this project do you feel needs the most improvement?</label>
+                                    <ul>
+                                        <li>
+                                            <input type="radio" name="radio_btn" value="design"><label>Design</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="radio_btn" value="code"><label>Code</label>
+                                        </li>
+                                        <li>
+                                            <input type="radio" name="radio_btn" value="functionality"><label>Functionality</label>
+                                        </li>
+                                    </ul>
+                            </div>
+                        </div>
+                        <label>Any further comments or ideas?</label>
+                        <textarea id="comments" class="input-field" placeholder="Enter your comments here..."></textarea>
+                        <br>
+                        <button id="submit" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+</body>
+</html>
